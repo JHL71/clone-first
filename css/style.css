@@ -1,3 +1,156 @@
 .hidden {
   display: none;
 }
+
+img {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+#clock {
+  position: absolute;
+  z-index: 5;
+  top: 10%;
+  right: 5%;
+  width: 100px;
+  padding: 4px 0px 0px 3px;
+  background-color: rgba(173, 216, 230, 0.5);
+  border-radius: 10px;
+}
+
+#login-form {
+  position: absolute;
+  z-index: 5;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.hidden{
+    display: none;
+  }
+}
+
+#login-form input {
+  outline: none;
+  border: none;
+  width: 300px;
+  height: 60px;
+  font-size: 30px;
+  background-color: rgba(173, 216, 230, 0.5);
+  color: blue;
+  caret-color: blue;
+  text-align: center;
+  border-radius: 20px;
+  &:focus {
+    border-bottom: 2px solid lightblue;
+  }
+  &::placeholder {
+    color: rgba(0, 0, 255, 0.5);
+  }
+}
+
+#login-form button {
+  border: none;
+  width: 100px;
+  height: 60px;
+  font-size: 20px;
+  margin-left: 10px;
+  border-radius: 20px;
+  background-color: lightblue;
+  color: blue;
+  cursor: pointer;
+  &:hover {
+    background-color: darkblue;
+    color: lightblue;
+  }
+}
+
+#greeting {
+  position: absolute;
+  z-index: 5;
+  top: 35%;
+  left: 50%;
+  text-align: center;
+  font-size: 50px;
+  padding: 10px 20px 0px 20px;
+  border-radius: 20px;
+  background-color: rgba(173, 216, 230, 0.5);
+  transform: translate(-50%, -50%);
+  color: darkblue;
+}
+
+#quote {
+  position: absolute;
+  z-index: 5;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgba(173, 216, 230, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#todo-form {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+
+#todo-form input {
+  outline: none;
+  border: none;
+  color: darkblue;
+  width: 300px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 0 15px;
+  background-color: rgba(173, 216, 230, 0.5);
+  &::placeholder {
+    color: darkblue;
+  }
+}
+
+#weather {
+  position: absolute;
+  z-index: 5;
+  right: 5%;
+  top: 20%;
+  background-color: rgba(173, 216, 230, 0.5);
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+#todo-list {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, 0);
+}
+
+#todo-list li {
+  list-style: square;
+  color: beige;
+}
+
+#todo-list span {
+  display: inline-block;
+  width: 280px;
+}
+
+#todo-list button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
