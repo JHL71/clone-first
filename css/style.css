@@ -11,6 +11,13 @@ img {
   height: 100vh;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #clock {
   position: absolute;
   z-index: 5;
@@ -23,16 +30,14 @@ img {
 }
 
 #login-form {
-  position: absolute;
+  position: relative;
   z-index: 5;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 500px;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
   &.hidden{
     display: none;
   }
@@ -74,16 +79,14 @@ img {
 }
 
 #greeting {
-  position: absolute;
+  position: relative;
   z-index: 5;
-  top: 35%;
-  left: 50%;
   text-align: center;
   font-size: 50px;
   padding: 10px 20px 0px 20px;
   border-radius: 20px;
   background-color: rgba(173, 216, 230, 0.5);
-  transform: translate(-50%, -50%);
+  margin-top: 100px;
   color: darkblue;
 }
 
@@ -99,11 +102,11 @@ img {
 }
 
 #todo-form {
-  position: absolute;
+  position: relative;
   z-index: 5;
-  left: 50%;
-  top: 55%;
-  transform: translate(-50%, -50%);
+  /* left: 50%;
+  top: 55%; */
+  /* transform: translate(-50%, -50%); */
 }
 
 #todo-form input {
@@ -132,11 +135,10 @@ img {
 }
 
 #todo-list {
-  position: absolute;
+  position: relative;
   z-index: 5;
-  left: 50%;
-  top: 60%;
-  transform: translate(-50%, 0);
+  transform: translate(-5%);
+  margin-top: 50px;
 }
 
 #todo-list li {
